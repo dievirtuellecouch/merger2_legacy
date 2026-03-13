@@ -45,7 +45,8 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['inheritable'] = [
  */
 
 $GLOBALS['TL_DCA']['tl_article']['fields']['inColumn']['merger_original_options_callback'] =
-    $GLOBALS['TL_DCA']['tl_article']['fields']['inColumn']['options_callback'];
+    // Contao 5.7.0 defines the callback, later 5.7.x can omit it.
+    $GLOBALS['TL_DCA']['tl_article']['fields']['inColumn']['options_callback'] ?? null;
 
 $GLOBALS['TL_DCA']['tl_article']['fields']['inColumn']['options_callback'] = [
     ArticleDataContainerListener::class,

@@ -24,7 +24,7 @@
     "irc": "irc://irc.freenode.org/contao.dev",
     "source": "https://github.com/contao-community-alliance/merger2"
   },
-    "version": "5.7.0",
+    "version": "5.7.1",
   "require": {
     "php": "^8.2",
     "ext-json": "*",
